@@ -42,7 +42,6 @@ export class NgDropFilesDirective {
   }
 
   private _getFiles(filesList: FileList) {
-    console.log(filesList);
 
     // tslint:disable-next-line:forin
     for (const property in Object.getOwnPropertyNames(filesList)) {

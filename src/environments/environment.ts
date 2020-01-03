@@ -2,17 +2,19 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+import {firestoreKey} from '../app/enums/firestoreKey.enum';
+
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyDlyQf05ocTENQ4-007DEEcaFrzDoiqcRA',
-    authDomain: 'uploadfile-c5a46.firebaseapp.com',
-    databaseURL: 'https://uploadfile-c5a46.firebaseio.com',
-    projectId: 'uploadfile-c5a46',
-    storageBucket: 'uploadfile-c5a46.appspot.com',
-    messagingSenderId: '63452943414',
-    appId: '1:63452943414:web:6ddda46da7aae2a6a9b497',
-    measurementId: 'G-WFFZNVQ2P3'
+    apiKey: firestoreKey.apiKey,
+    authDomain: 'upload-file-66751.firebaseapp.com',
+    databaseURL: 'https://upload-file-66751.firebaseio.com',
+    projectId: 'upload-file-66751',
+    storageBucket: 'upload-file-66751.appspot.com',
+    messagingSenderId: '341644291296',
+    appId: '1:341644291296:web:f57dc811a6275405c03485',
+    measurementId: firestoreKey.appId
   },
 };
 

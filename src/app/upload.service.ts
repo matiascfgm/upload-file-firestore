@@ -30,12 +30,17 @@ export class UploadService {
         (error) => console.error('error on upload ', error),
         () => {
         console.log('image uploaded');
-        item.url = uploadTask.snapshot.downloadURL;
-        item.uploading = false;
-        this.saveImg({
-          name: item.fileName,
-          url: item.url
-        });
+        uploadTask.snapshot.ref.getDownloadURL().then(
+          (response: any) => {
+            item.url = response;
+            item.uploading = false;
+            console.log('item', item);
+            this.saveImg({
+              name: item.fileName,
+              url: item.url
+            });
+          }
+        );
         });
     }
   }
