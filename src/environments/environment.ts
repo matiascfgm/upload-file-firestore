@@ -13,8 +13,8 @@ export const environment = {
     projectId: 'upload-file-66751',
     storageBucket: 'upload-file-66751.appspot.com',
     messagingSenderId: '341644291296',
-    appId: '1:341644291296:web:2edf282000ecc26ac03485',
-    measurementId: firestoreKey.appId
+    appId: firestoreKey.appId,
+    measurementId: 'G-CL9N1EK1J4'
   },
 };
 
